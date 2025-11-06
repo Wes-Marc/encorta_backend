@@ -5,13 +5,19 @@
     "type": "module",
     "main": "index.js",
     "scripts": {
-        "dev": "node --watch index"
+        "dev": "node --watch index",
+        "db:push": "drizzle-kit push",
+        "db:studio": "drizzle-kit studio"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "packageManager": "pnpm@10.19.0",
     "dependencies": {
-        "express": "^5.1.0"
+        "dotenv": "^17.2.3",
+        "drizzle-kit": "^0.31.6",
+        "drizzle-orm": "^0.44.7",
+        "express": "^5.1.0",
+        "pg": "^8.16.3"
     }
 }
